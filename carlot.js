@@ -1,6 +1,6 @@
 var Carlot = (function() {
 
-var inventory = [];
+    var inventory = [];
 
     return {
         loadInventory: function() {
