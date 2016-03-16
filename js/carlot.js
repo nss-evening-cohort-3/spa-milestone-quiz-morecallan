@@ -3,7 +3,7 @@ var Carlot = (function() {
     var inventory = [];
 
     return {
-        loadInventory: function() {
+        loadInventory: function(callbackFunc) {
             // The first IIFE should add a public function (e.g. loadInventory) that loads the inventory.json file and stores the inventory in a private variable.
             //Step 1: Set up http req for inventory
             var myInventoryReq = new XMLHttpRequest;
@@ -24,6 +24,7 @@ var Carlot = (function() {
             //Step 5: Create callback for once the product page loads
             function inventorySuccess() {
                 inventory = JSON.parse(this.responseText);
+                callbackFunc();
             };
         }, 
 
