@@ -1,3 +1,17 @@
+body {
+    margin: 20px;
+}
+
 li {
     list-style: none;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.myCarCard {
+    background-color: yellow;
+}
+
+.selected {
+    border: 5px solid black
 }
