@@ -6,7 +6,7 @@ var Carlot = (function(oldCarlot) {
         for (var i = 0; i < carsArray.length; i++) {
             carsArray[i].addEventListener("click", function(e, color) {
                 var clickedItem = e.currentTarget;
-                oldCarlot.addBorder(clickedItem, color);
+                oldCarlot.addBorder(clickedItem);
                 textChangeUp(clickedItem)
             })
         }

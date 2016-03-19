@@ -13,6 +13,5 @@ li {
 }
 
 .selected {
-    border: 5px solid black;
     background-color: slategray;
 }

@@ -3,19 +3,21 @@ var Carlot = (function(oldCarlot) {
         //A car DOM element that was clicked on.
         //A color name.
     
-    oldCarlot.resetBorder = function(currentCard, borderColor) {
+    oldCarlot.resetBorder = function() {
         // One function resets the border thickness and background color for each car element back to the original values.
         var carsOnDom = document.getElementsByClassName("myCarCard");
         for (var i = 0; i < carsOnDom.length; i++) {
             carsOnDom[i].classList.remove("selected");
+            carsOnDom[i].style.borderWidth = "medium"
         }
        
     };
 
-    oldCarlot.addBorder = function(clicked, color) {
+    oldCarlot.addBorder = function(clicked) {
         // The other function changes the thickness of the border of a car element, and changes its background color. The function must accept two arguments.
         oldCarlot.resetBorder();
         clicked.classList.add("selected");
+        clicked.style.borderWidth = "thick"
     }
 
     oldCarlot.editText = function() {

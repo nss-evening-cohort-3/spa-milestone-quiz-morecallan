@@ -7,7 +7,7 @@ function populatePage (inventory) {
   var buildString = "";
   // Loop over the inventory and populate the page
   for (var i = 0; i < carArray.length; i++) {
-    buildString += `<section class="col-md-4 myCarCard" style=" border: 10px solid ${carArray[i].color}">`
+    buildString += `<section class="col-md-4 myCarCard" style=" border: 5px solid ${carArray[i].color}">`
     buildString += `<h2>${carArray[i].make} `
     buildString += `${carArray[i].model} </h2>`
     buildString += `<h3> Year: ${carArray[i].year} </h3>`
