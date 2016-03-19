@@ -26,8 +26,4 @@ var Carlot = (function(oldCarlot) {
     }
 
     return oldCarlot
-}(Carlot || {})); // console.log("currentCard", carsOnDom);
-        // for (var j = 0; j < carsOnDom.length; j++) {
-        //     alert("hello");
-        //     carsOnDom[j].style.border = "2px solid" + borderColor
-        // }
+}(Carlot || {})); 

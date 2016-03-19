@@ -8,16 +8,14 @@ var Carlot = (function(oldCarlot) {
                 var clickedItem = e.currentTarget;
                 oldCarlot.addBorder(clickedItem, color);
                 textChangeUp(clickedItem)
-
             })
         }
 
         function textChangeUp(selectedCard) {
             var currentCard = selectedCard;
-            console.log("currentCard", currentCard);
             var textInput = document.getElementById("editDescription");
             textInput.addEventListener("keyup", function(e, currentCard) {
-                Carlot.editText(e, currentCard);
+                Carlot.editText();
             })
         }
     }
