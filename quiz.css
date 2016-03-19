@@ -9,7 +9,10 @@ li {
 }
 
 .myCarCard {
-    background-color: gray;
+    background-color: gainsboro;
+    margin: 20px;
+    height: 300px;
+
 }
 
 .selected {
