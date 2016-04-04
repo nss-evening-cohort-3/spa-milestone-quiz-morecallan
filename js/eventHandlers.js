@@ -7,13 +7,16 @@ var Carlot = (function(oldCarlot) {
             carsArray[i].addEventListener("click", function(e, color) {
                 var clickedItem = e.currentTarget;
                 oldCarlot.addBorder(clickedItem);
-                textChangeUp(clickedItem)
+                textChangeUp(clickedItem);
             })
         }
 
+        //Takes the "clicked on" card and preps it for edit by focusing on input field and emptying the input field
         function textChangeUp(selectedCard) {
             var currentCard = selectedCard;
             var textInput = document.getElementById("editDescription");
+            textInput.focus();
+            textInput.value = "";
             textInput.addEventListener("keyup", function(e, currentCard) {
                 Carlot.editText();
             })
