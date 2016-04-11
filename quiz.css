@@ -1,0 +1,20 @@
+body {
+    margin: 20px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.myCarCard {
+    background-color: gainsboro;
+    margin: 20px;
+    height: 300px;
+
+}
+
+.selected {
+    background-color: slategray;
+}
